@@ -82,6 +82,7 @@ To set up your python environment to run the code in this repository, follow the
 	```
 	
 2. Follow the instructions in [this repository](https://github.com/openai/gym) to perform a minimal install of OpenAI gym.  
+        - On Ubuntu install also `sudo apt-get install -y libglu1-mesa-dev libgl1-mesa-dev libosmesa6-dev xvfb ffmpeg curl patchelf libglfw3 libglfw3-dev cmake zlib1g zlib1g-dev swig`
 	- Next, install the **classic control** environment group by following the instructions [here](https://github.com/openai/gym/blob/master/docs/environments.md#classic-control).
 	- Then, install the **box2d** environment group by following the instructions [here](https://github.com/openai/gym/blob/master/docs/environments.md#box2d).
 	
