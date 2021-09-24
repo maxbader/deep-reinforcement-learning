@@ -55,8 +55,8 @@ def mc_prediction_q(env, num_episodes, generate_episode, gamma=1.0):
         ## TODO: complete the function
         episode = generate_episode_from_limit_stochastic(env)
         for [state, action, reward] in episode:
-            returns_sum[state][action] =  Q[state][action] + reward
-            N[state][action] =  N[state][action] + 1
+            returns_sum[state][action] += reward
+            N[state][action] += 1
             Q[state][action] =  returns_sum[state][action] / N[state][action]
     return Q
 Q = mc_prediction_q(env, 10, generate_episode_from_limit_stochastic)
